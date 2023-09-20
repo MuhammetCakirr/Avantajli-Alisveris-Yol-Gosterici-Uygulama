@@ -23,7 +23,7 @@ def home_page(request):
     homepageveriler=[]
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--start-maximized")
-    chrome_options.add_experimental_option("prefs", {"profile.default_content_setting_values.notifications": 2})  # Bildirimleri engelleyin
+    chrome_options.add_experimental_option("prefs", {"profile.default_content_setting_values.notifications": 2}) 
     url = 'https://www.cimri.com'
     driver = webdriver.Chrome(options=chrome_options)
     driver.get(url)
