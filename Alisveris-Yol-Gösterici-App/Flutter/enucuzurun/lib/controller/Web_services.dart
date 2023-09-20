@@ -104,7 +104,7 @@ class WebService extends GetxController{
   
   Future<void> sendRequest(String id) async {
     try {
-      final url = Uri.parse('http://192.168.1.114:8000/ProductDetailPage/'); // Django URL'sini buraya ekleyin
+      final url = Uri.parse('http://192.168.1.114:8000/ProductDetailPage/'); 
       final response = await http.post(url, body: {'veri': id});
        
       if (response.statusCode == 200) {
