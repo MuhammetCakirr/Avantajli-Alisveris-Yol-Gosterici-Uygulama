@@ -74,8 +74,8 @@ class _SelectedProductsState extends State<SelectedProducts> {
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2, // Sütun sayısı (2 tane ürün her satırda)
-                childAspectRatio: 0.7, // Genişlik ve yükseklik oranı
+                crossAxisCount: 2, 
+                childAspectRatio: 0.7, 
               ),
               itemCount: widget.urunler.length,
               itemBuilder: (context, index) {
